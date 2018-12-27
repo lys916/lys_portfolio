@@ -1,0 +1,42 @@
+.skills-con {
+    margin-top: 30px;
+    overflow: hidden;
+}
+.skills-con .skill{
+    color: white;
+    text-align: left;
+    width: 700px;
+    margin: 10px auto;
+}
+.skill .bar {
+    display: flex;
+}
+.skill .name {
+    font-size: 17px;
+    opacity: 0;
+}
+
+.skill .show-name {
+    opacity: 1;
+    transition: 1s;
+    transition-delay: .5s;
+}
+
+.skill .rating{
+    width: 0px;
+    height: 15px;
+    background: var(--skills);
+    margin-right: 5px;
+}
+.skill .percent{
+    opacity: 0;
+}
+.skill .show-percent{
+    opacity: 1;
+    transition: 1s;
+    transition-delay: .5s;
+}
+.skill .show-rating{
+    transition: width 1.5s;
+    transition-delay: .3s;
+}

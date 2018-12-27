@@ -1,0 +1,83 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+  margin: 0px auto;
+}
+
+.showline-skills {
+  border-bottom: 2px solid var(--skills);
+  transition: border-bottom .8s;
+}
+.showline-projects {
+  border-bottom: 2px solid var(--projects);
+  transition: border-bottom .8s;
+}
+.showline-contact {
+  border-bottom: 2px solid var(--contact);
+  transition: border-bottom .8s;
+}
+.buttons .button {
+  padding: 10px;
+  margin: 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  background: black;
+  opacity: 0;
+  transform: translateX(-20px);
+}
+.buttons .show-button {
+  opacity: 1;
+  -webkit-transition: opacity .3s ease .3s, transform .3s;
+  transform: translateX(0px);
+  transition: opacity .3s ease .3s, transform .3s;
+}
+.buttons .show-home {
+  transition-delay: .3s;
+}
+.buttons .show-skills {
+  transition-delay: .5s;
+}
+.buttons .show-projects {
+  transition-delay: .7s;
+}
+.buttons .show-contact {
+  transition-delay: .9s;
+}
+
+.buttons .home {
+  border: 2px solid var(--home);
+  color: var(--home);
+}
+.buttons .home:hover {
+  background:var(--home);
+  color: black;
+  font-weight: bold;
+}
+.buttons .skills {
+  border: 2px solid var(--skills);
+  color: var(--skills);
+}
+.buttons .skills:hover {
+  background: var(--skills);
+  color: black;
+  font-weight: bold;
+}
+.buttons .projects {
+  border: 2px solid var(--projects);
+  color: var(--projects);
+}
+.buttons .projects:hover {
+  background: var(--projects);
+  color: black;
+  font-weight: bold;
+}
+.buttons .contact {
+  border: 2px solid var(--contact);
+  color: var(--contact);
+}
+.buttons .contact:hover {
+  background: var(--contact);
+  color: black;
+  font-weight: bold;
+}

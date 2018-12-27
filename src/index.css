@@ -1,0 +1,20 @@
+/* html {margin: 0; height: 100%; overflow: hidden} */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: black;
+  height: 100%;
+  /* overflow: hidden; */
+}
+:root {
+  --blue: #569cd6;
+  --yellow: #dcdc9c;
+  --teal: #4ec9b0;
+  --orange: #ce9178;
+  --gray: #dcd4d4;
+  --home: #569cd6;
+  --skills: #4ec9b0;
+  --projects: #ce9178;
+  --contact: #dcdc9c;
+}

@@ -1,0 +1,457 @@
+/* MEDIA QUERY */
+@media screen and (max-width: 1300px) {	
+	/* Button */
+	.buttons {
+      width: 800px;
+	}
+
+	/* Intro */
+	.image {
+		width: 130px !important;
+		height: 130px !important;
+	}
+	.my-name {
+		font-size: 45px !important;
+	}
+	.my-job {
+		font-size: 35px !important;
+	}
+	.show-header {
+      height: 350px !important;
+	}
+
+	/* Skills */
+	.skills-con .skill {
+		width: 600px !important;
+		margin: 5px auto !important;
+   }
+   .skill .name {
+      font-size: 15px !important;
+   }
+   .skill .rating {
+      height: 13px !important;
+   }
+   .skill .percent {
+		font-size: 12px !important;
+	}
+
+	/* Project */
+	.project-list {
+		width: 800px !important;
+	}
+}
+
+@media screen and (max-width: 1024px) {	
+	/* Button */
+	.buttons {
+      width: 650px;
+   }
+   
+   .buttons .button {
+      margin: 20px 20px 30px 20px;
+      font-size: 17px;
+   }
+
+	/* Intro */
+	.image {
+		width: 130px !important;
+		height: 130px !important;
+	}
+	.my-name {
+		font-size: 45px !important;
+	}
+	.my-job {
+		font-size: 35px !important;
+	}
+	.show-header {
+      height: 350px !important;
+	}
+
+	/* Skills */
+	.skills-con .skill {
+		width: 500px !important;
+		margin: 01px auto !important;
+   }
+   .skill .name {
+      font-size: 14px !important;
+   }
+   .skill .rating {
+      height: 12px !important;
+   }
+   .skill .percent {
+		font-size: 12px !important;
+	}
+
+	/* Project */
+	.project-list {
+		width: 800px !important;
+	}
+}
+  
+@media screen and (max-width: 850px) {
+   /* Button  */
+   .buttons {
+      width: 600px;
+   }
+
+   /* Intro */
+   .image {
+   	width: 120px !important;
+      height: 120px !important;
+   }
+	.my-name {
+      font-size: 40px !important;
+   }
+   .my-job {
+      font-size: 30px !important;
+   }
+   .show-header {
+      margin-bottom: 10px !important;
+	}
+	
+	/* Skills */
+	.skills-con .skill {
+		width: 500px !important;
+		margin: 0px auto !important;
+   }
+   .skill .name {
+      font-size: 15px !important;
+   }
+   .skill .rating {
+      height: 10px !important;
+   }
+	/* Contact */
+	
+	form {
+		font-size: 17px !important;
+		width: 500px !important;
+	}
+
+	form input {
+		font-size: 20px !important;
+	}
+	form textarea {
+		font-size: 20px !important;
+	}
+	form button {
+		font-size: 17px !important;
+	}
+
+	/* Project */
+	.project-list {
+		width: 700px !important;
+	}
+	.project-list .project {
+		width: 200px;
+		height: 240px;
+		margin-top: 80px;
+	}
+	.tech-used span {
+		font-size: 25px !important;
+	}
+}
+  
+@media screen and (max-width: 740px) {
+	/* Button  */
+	.buttons {
+		width: 600px;
+	}
+	.buttons .button {
+		margin: 15px 18px 25px 18px;
+	}
+
+	/* Intro */
+	.header .my-name {
+		font-size: 35px !important;
+	}
+	.header .my-job {
+		font-size: 30px !important;
+	}
+	.header.show-header {
+		margin-bottom: 0px;
+		height: 360px;
+	}
+
+	/* Skills */
+	.skills-con .skill {
+		width: 500px !important;
+	}
+
+	/* Contact */
+
+	form {
+		width: 400px !important;
+	}
+	form .label {
+		margin-top: 5px !important;
+	}
+
+	/* Project */
+	.project-list {
+		width: 600px !important;
+	}
+	.project-list .project {
+		width: 180px;
+		height: 210px;
+		margin-top: 50px;
+	}
+	.tech-used span {
+		font-size: 22px !important;
+	}
+}
+@media screen and (max-width: 640px) {
+	/* Button */
+	.buttons {
+		width: 500px;
+	}
+	.buttons .button {
+		margin: 15px 13px 25px 13px;
+		font-size: 18px !important;
+	}
+
+	/* Intro */
+	.header .image {
+		width: 100px !important;
+		height: 100px !important;
+	}
+	.header .my-name {
+		font-size: 30px !important;
+	}
+	.header .my-job {
+		font-size: 25px !important;
+	}
+	.header.show-header {
+		height: 330px;
+	}
+
+	/* Skills */
+	.skills-con .skill {
+		width: 400px !important;
+		margin: 0px auto !important;
+   }
+   .skill .name {
+      font-size: 13px !important;
+   }
+   .skill .rating {
+      height: 10px !important;
+   }
+   
+   .skill .percent {
+		font-size: 10px !important;
+	}
+
+	/* Contact */
+
+	form {
+		width: 350px !important;
+	}
+	form input {
+		font-size: 18px !important;
+	}
+
+	/* Project */
+	.project-list {
+		width: 500px !important;
+	}
+	.project-list .project {
+		width: 170px;
+		height: 180px;
+	}
+	.tech-used span {
+		font-size: 18px !important;
+	}
+}
+  
+@media screen and (max-width: 540px) {
+	/* Button  */
+	.buttons {
+      width: 400px;
+	}
+	.buttons .button {
+		margin: 5px 5px 20px 5px;
+		font-size: 15px !important;
+	}
+
+	/* Intro */
+	.header .image {
+		width: 90px !important;
+		height: 90px !important;
+	}
+	.header .my-name {
+		font-size: 25px !important;
+	}
+	.header .my-job {
+		font-size: 20px !important;
+	}
+
+	.header.show-header {
+		height: 300px;
+	}
+
+	/* Skills */
+	.skills-con .skill {
+		width: 300px !important;
+		margin: 0px auto !important;
+	}
+
+   .skill .name {
+      font-size: 13px !important;
+   }
+   .skill .rating {
+      height: 8px !important;
+   }
+   
+   .skill .percent {
+		font-size: 10px !important;
+	}
+
+	/* Contact */
+
+	form {
+		width: 320px !important;
+	}
+
+	form textarea {
+		height: 140px !important;
+	};
+
+		/* Project */
+	.project-list {
+		width: 500px !important;
+	}
+	.project-list .project {
+		width: 170px;
+		height: 190px;
+	}
+
+	/* Project */
+	.project-list {
+		width: 270px !important;
+		/* flex-wrap: wrap; */
+      flex-direction: column;
+      padding-top: 30px;
+	}
+	.project-list .project {
+		width: 230px;
+		height: 300px;
+		margin: 10px auto;
+	}
+	.tech-used span {
+		font-size: 30px !important;
+	}
+}
+
+@media screen and (max-width: 427px) {
+   /* Button */
+   .buttons {
+     width: 350px;
+   }
+   .buttons .button {
+      margin: 0px 3px 14px 3px;
+      font-size: 14px;
+      padding: 7px;
+   }
+
+   /* Intro */
+   .header .image {
+      
+   }
+   .header .my-name {
+      font-size: 19px !important;
+      margin-top: -10px !important
+
+   }
+   .header .my-job {
+      font-size: 17px !important;
+	}
+	
+	/* Skills */
+	.skills-con .skill {
+		width: 250px !important;
+		margin: 0px auto !important;
+	}
+	.skill .name {
+		font-size: 13px !important;
+	}
+
+	.skill .rating {
+		height: 10px !important;
+	}
+
+	.skill .percent {
+		font-size: 10px !important;
+	}
+
+	/* Contact */
+
+	form {
+		width: 280px !important;
+	}
+	form .label {
+		margin-top: 5px !important;
+	}
+
+	/* Project */
+	.project-list {
+		width: 250px !important;
+	}
+	.project-list .project {
+		width: 220px;
+		height: 260px;
+		margin: 10px auto;
+	}
+	.tech-used span {
+		font-size: 25px !important;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	/* Button */
+    .buttons .button {
+       margin: 0px 2px 7px 2px;
+       font-size: 13px;
+       padding: 5px;
+    }
+
+   /* Intro */
+	.header .my-name {
+	   font-size: 16px !important;
+	}
+	.header .my-job {
+	   font-size: 14px !important;
+	 }
+	 
+	 /* Skills */
+	 .skills-con .skill {
+		 width: 250px !important;
+	 }
+ 
+	 /* Contact */
+ 
+	 form {
+		 width: 265px !important;
+	 }
+	 form .label {
+		 font-size: 16px !important;
+	 }
+	 form input {
+		 margin: 10px 0px !important;
+		 font-size: 17px !important;
+	 }
+	 form textarea {
+		 height: 100px !important;
+		 font-size: 17px !important;
+	 }
+	 /* Project */
+	.project-list {
+		width: 220px !important;
+	}
+	.project-list .project {
+		width: 200px;
+		height: 230px;
+		margin: 10px auto;
+	}
+	.tech-used span {
+		font-size: 23px !important;
+	}
+ }

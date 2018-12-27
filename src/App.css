@@ -1,0 +1,50 @@
+.App {
+  background: black;
+}
+.container {
+  text-align: center;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  width: 80vw;
+  margin: 0px auto;
+  background: black;
+  min-width: 80px;
+}
+
+.sideline-home {
+  border-left: 2px solid var(--home);
+  border-right: 2px solid var(--home);
+  transition: border-left .8s, border-right .8s
+}
+.sideline-skills {
+  border-left: 2px solid var(--skills);
+  border-right: 2px solid var(--skills);
+  transition: border-right .8s, border-left .8s;
+}
+.sideline-projects {
+  border-left: 2px solid var(--projects);
+  border-right: 2px solid var(--projects);
+  transition: border-right .8s, border-left .8s;
+}
+.sideline-contact {
+  border-left: 2px solid var(--contact);
+  border-right: 2px solid var(--contact);
+  transition: border-right .8s, border-left .8s;
+}
+
+@media screen and (max-width: 1687px) {	
+  .container {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 1270px) {	
+  .container {
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {	
+  .container {
+    width: 99vw;
+  }
+}
