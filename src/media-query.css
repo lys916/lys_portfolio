@@ -2,7 +2,8 @@
 @media screen and (max-width: 1300px) {	
 	/* Button */
 	.buttons {
-      width: 800px;
+		width: 800px;
+		border: 3px solid yellow;
 	}
 
 	/* Intro */
@@ -91,7 +92,8 @@
 @media screen and (max-width: 850px) {
    /* Button  */
    .buttons {
-      width: 600px;
+		width: 700px;
+		border: 3px solid red;
    }
 
    /* Intro */

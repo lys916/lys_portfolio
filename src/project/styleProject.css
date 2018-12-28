@@ -1,10 +1,16 @@
 .list {
    position: relative;
    height: 400px;
+   background: 'black';
 }
-.each-project {
-   width: 200px;
-   margin-left: 200px;
+
+.hover {
+    opacity: .5;
+    width: 100px;
+}
+
+.hover:hover{
+    opacity: 1;
 }
 
 .project {
@@ -12,13 +18,13 @@
     transform: translateY(30px);
     min-width: 230px;
     height: 280px;
-    border: 3px solid rgb(95, 95, 95);
+    /* border: 3px solid rgb(95, 95, 95); */
     margin: 100px 32px;
     position: relative;
 }
 
 .project:hover {
-    border: 3px solid var(--orange);
+    /* border: 3px solid var(--orange); */
     transition: border 1s;
 }
 
@@ -30,6 +36,7 @@
     height: 100%;
     object-fit: cover;
 }
+
 
 .tech-used {
     opacity: 0;
@@ -66,11 +73,11 @@
 .description {
     opacity: 0;
     color: white;
-    padding: 0px 82px;
     text-align: left;
-    width: 900px;
+    width: 970px;
     margin: 0 auto;
-    transform: translate(-50px, 0px);
+    transform: translate(0px, -60px);
+    font-size: 20px;
 }
 
 .show-desc {

@@ -19,7 +19,7 @@ class ProjectList extends React.Component {
     }
 
     handleHover = (index)=>{
-        this.setState({index, showDesc: true});
+        this.setState({index, showDesc: true},);
 	 }
 
 	 handleLeave = ()=>{
@@ -27,27 +27,32 @@ class ProjectList extends React.Component {
   }
 
     render (){ 
-       console.log(this.state.index);
+        let rBtnCpnt = (<div className="material-icons" style={{fontSize: 150, color: 'white'}}>keyboard_arrow_right</div>);
+        let lBtnCpnt = (<div className="material-icons" style={{fontSize: 150, color: 'white'}}>keyboard_arrow_left</div>);
+
       let projectsCpnts= projects.map((item, index) => 
-      <div className={`
-         ${this.state.showProject ? 'show-project' : null}
-         ${this.state.showOverlay === this.state.name ? 'show-overlay' : null}`
-      } key = {index} style={projectStyle}>
-          <img src = {item.img} onMouseOver={()=>{this.handleHover(index)}} onMouseLeave={this.handleLeave}></img>
-          {/* <p style = {textBoxStyle} >{item.name}</p>
-          <p style = {textBoxStyle2} >{item.des}</p> */}
-      </div>
+        <div className={`
+            ${this.state.showProject ? 'show-project' : null}
+            ${this.state.showOverlay === this.state.name ? 'show-overlay' : null}`} 
+            key = {index}>
+            <p className="title" style={textBoxStyle}>{item.name}</p>
+            <a href={item.url} target="_blank"><img className='hover' src = {item.img} onMouseOver={()=>{this.handleHover(index)}} onMouseLeave={this.handleLeave}></img></a>
+        </div>
+
+        
   );
         return (
-			  	<div className="list">
+			<div className="list">
 
               <CarouselSlider slideCpnts = {projectsCpnts}
                   sliderBoxStyle={sliderBoxStyle}
                   buttonSetting = {{placeOn: 'middle-outside'}}
                   dotsSetting = {{placeOn: 'top'}}
+                  itemsStyle={itemsStyle}
+                  rBtnCpnt = {rBtnCpnt}
+                lBtnCpnt = {lBtnCpnt}
               />
       
-              lksjflkjsdkfj
 					{/* <div className="project-list">
 						{
 							this.state.projects.map((project, index)=>{
@@ -66,24 +71,35 @@ class ProjectList extends React.Component {
 					</div> */}
 					
 					<div className={`description ${this.state.showDesc ? 'show-desc' : null }`}>
-						{projects[this.state.index] ? <div>{projects[this.state.index].desc}</div> : null}
-					</div> 
-               <div>
-						{projects[this.state.index] ? <div>{projects[this.state.index].desc}</div> : null}
-					</div> 
-               
-               
-				</div>
+						{projects[this.state.index] ? <div>{projects[this.state.index].desc}<br/><br/>Tech used: {projects[this.state.index].tech}</div> : null}
+					</div>         
+			</div>
         )
     }
 }
 
+let btnStyle = {
+    fontSize: "36px",
+    color: "white"
+}
+
 const sliderBoxStyle = {
    background: 'black',
-   width: '70%'
+   width: '75%',
 }
-const projectStyle = {
-   background: 'blue'
+const textBoxStyle = {
+        color: "white",
+        background: "rgba(0, 0, 0, .8)",
+        zIndex: 1,
+        fontSize: 22,
+        width: '93%',
 }
+
+const itemsStyle = {
+    background: 'black',
+    border: '1px solid #ce9178',
+    borderRadius: '3px'
+}
+
 
 export default ProjectList;
