@@ -1,31 +1,27 @@
-.list {
-   position: relative;
-   height: 400px;
-   background: 'black';
-}
 
-.hover {
+
+.img {
     opacity: .5;
-    width: 100px;
+    /* border: 4px solid red; */
 }
 
-.hover:hover{
+.img:hover{
     opacity: 1;
 }
 
-.project {
+/* .project {
     opacity: 0;
     transform: translateY(30px);
     min-width: 230px;
-    height: 280px;
+    height: 280px; */
     /* border: 3px solid rgb(95, 95, 95); */
-    margin: 100px 32px;
+    /* margin: 100px 32px;
     position: relative;
-}
+} */
 
-.project:hover {
+/* .project:hover { */
     /* border: 3px solid var(--orange); */
-    transition: border 1s;
+    /* transition: border 1s;
 }
 
 .project img {
@@ -35,10 +31,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
 
-.tech-used {
+/* .tech-used {
     opacity: 0;
     background: black;
     width: 100%;
@@ -68,7 +64,7 @@
     transform: translateY(0px);
     transition: opacity .7s, transform .7s;
     transition-delay: .2s;
-}
+} */
 
 .description {
     opacity: 0;
@@ -76,7 +72,7 @@
     text-align: left;
     width: 970px;
     margin: 0 auto;
-    transform: translate(0px, -60px);
+    transform: translate(0px, -40px);
     font-size: 20px;
 }
 

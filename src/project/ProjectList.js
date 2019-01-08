@@ -9,13 +9,25 @@ class ProjectList extends React.Component {
     state = {
         projects,
         showProject: false,
-		  showDesc: false,
-		  index: null
+		showDesc: false,
+		index: null,
+        width: null,
+        height: null
     }
     componentDidMount(){
+         window.addEventListener('resize', this.updateDem);
         setTimeout(()=>{
 			this.setState({showProject: true});
-		},1000);
+		}, 10);
+       
+    }
+
+    componentWillMount(){
+        this.setState({width: window.innerWidth, height: window.innerHeight})
+    };
+
+    updateDem = ()=>{
+        this.setState({width: window.innerWidth, height: window.innerHeight})
     }
 
     handleHover = (index)=>{
@@ -24,33 +36,35 @@ class ProjectList extends React.Component {
 
 	 handleLeave = ()=>{
 		this.setState({index: null, showDesc: false});
-  }
+    }
 
     render (){ 
-        let rBtnCpnt = (<div className="material-icons" style={{fontSize: 150, color: 'white'}}>keyboard_arrow_right</div>);
-        let lBtnCpnt = (<div className="material-icons" style={{fontSize: 150, color: 'white'}}>keyboard_arrow_left</div>);
+        let rBtnCpnt = (<div className="material-icons" style={{
+            fontSize: 150, color: 'white', 
+            marginRight: '130px',
+            marginBottom: '90px'
+            }}>keyboard_arrow_right</div>);
+
+        let lBtnCpnt = (<div className="material-icons" style={{fontSize: 150, color: 'white', marginLeft: '130px', marginBottom: '90px'}}>keyboard_arrow_left</div>);
 
       let projectsCpnts= projects.map((item, index) => 
-        <div className={`
-            ${this.state.showProject ? 'show-project' : null}
-            ${this.state.showOverlay === this.state.name ? 'show-overlay' : null}`} 
-            key = {index}>
-            <p className="title" style={textBoxStyle}>{item.name}</p>
-            <a href={item.url} target="_blank"><img className='hover' src = {item.img} onMouseOver={()=>{this.handleHover(index)}} onMouseLeave={this.handleLeave}></img></a>
+        <div key = {index}>
+            <p className="title" style={textBoxStyle}>{this.state.width}</p>
+            <a href={item.url} target="_blank"><img className='img' style={itemsStyle} src = {item.img} onMouseOver={()=>{this.handleHover(index)}} onMouseLeave={this.handleLeave}></img></a>
         </div>
 
         
-  );
+    );
         return (
 			<div className="list">
 
               <CarouselSlider slideCpnts = {projectsCpnts}
-                  sliderBoxStyle={sliderBoxStyle}
-                  buttonSetting = {{placeOn: 'middle-outside'}}
-                  dotsSetting = {{placeOn: 'top'}}
-                  itemsStyle={itemsStyle}
-                  rBtnCpnt = {rBtnCpnt}
-                lBtnCpnt = {lBtnCpnt}
+                    sliderBoxStyle={this.state.showProject ? showSlider : sliderBoxStyle}
+                    buttonSetting = {{placeOn: 'middle-outside'}}
+                    dotsSetting = {{placeOn: 'top', style: {marginTop: '-4px'}}}
+                    itemsStyle={itemsStyle}
+                    rBtnCpnt = {rBtnCpnt}
+                    lBtnCpnt = {lBtnCpnt}
               />
       
 					{/* <div className="project-list">
@@ -72,34 +86,52 @@ class ProjectList extends React.Component {
 					
 					<div className={`description ${this.state.showDesc ? 'show-desc' : null }`}>
 						{projects[this.state.index] ? <div>{projects[this.state.index].desc}<br/><br/>Tech used: {projects[this.state.index].tech}</div> : null}
-					</div>         
+					</div>   
+                    <p style={{color: 'white'}}>{this.state.width}</p>      
 			</div>
         )
     }
 }
 
-let btnStyle = {
-    fontSize: "36px",
-    color: "white"
+// let btnStyle = {
+//     fontSize: "36px",
+//     color: "white"
+// }
+
+const imageStyle = {
+    border: '4px solid blue'
 }
 
 const sliderBoxStyle = {
    background: 'black',
-   width: '75%',
+   width: '69%',
+   opacity: 0,
+   transform: 'translate(0px, -60px)'
 }
+
+const showSlider = {
+    background: 'black',
+    border: '2px solid red',
+    height: 360,
+    opacity: 1,
+    marginTop: 20,
+    transform: 'translate(0px , 0px)',
+    transition: 'opacity .7s, transform .7s',
+    width: '69%',
+}
+
 const textBoxStyle = {
-        color: "white",
-        background: "rgba(0, 0, 0, .8)",
-        zIndex: 1,
-        fontSize: 22,
-        width: '93%',
+    color: "white",
+    background: "rgba(0, 0, 0, .8)",
+    zIndex: 1,
+    fontSize: 22,
 }
 
 const itemsStyle = {
-    background: 'black',
-    border: '1px solid #ce9178',
-    borderRadius: '3px'
+    background: 'red',
+    borderRadius: '3px',
+    minWidth: '-10%',
+    padding: '0px'
 }
-
 
 export default ProjectList;
