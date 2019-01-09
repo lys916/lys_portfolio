@@ -3,7 +3,7 @@
 }
 .container {
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
   width: 80vw;
   margin: 0px auto;
@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 1687px) {	
   .container {
-    width: 90vw;
+    width: 85vw;
   }
 }
 @media screen and (max-width: 1270px) {	

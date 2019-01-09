@@ -26,7 +26,7 @@ const projects = [
      desc: "This is Cated, a food catering app that lets user easily select food items, drinks, supplies, set delivery time and pay with credit/debit card. This app was inspired by my love for cooking, good foods and the company of family and friends. A lot of people nowadays are just too busy or don't have the skills to cook and prepare food for an event or a party. Cated aims to solve all those problems and let everyone enjoy one another. This project is still ongoing",
  },
  {
-  name: 'Mien Internet Radio',
+  name: 'MIR',
   url: 'https://play.google.com/store/apps/details?id=com.iumienradio&hl=en',
   img: 'radio.png',
   tech: 'React Native, Expo',

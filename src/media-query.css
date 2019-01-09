@@ -3,7 +3,6 @@
 	/* Button */
 	.buttons {
 		width: 800px;
-		border: 3px solid yellow;
 	}
 
 	/* Intro */
@@ -36,10 +35,25 @@
 		font-size: 12px !important;
 	}
 
-	/* Project */
-	.project-list {
-		width: 800px !important;
-	}
+   /* Project */
+   .projects-wrapper {
+      width: 900px !important;
+   }
+   .each-project img {
+      width: 130px !important;
+   }
+
+   .img-wrap img {
+      width: 220px !important;
+   }
+
+   .active-project .desc {
+      font-size: 17px !important;
+   }
+
+   .project-list {
+      margin-top: 70px !important;
+   }
 }
 
 @media screen and (max-width: 1024px) {	
@@ -83,18 +97,43 @@
 		font-size: 12px !important;
 	}
 
-	/* Project */
-	.project-list {
-		width: 800px !important;
-	}
+	   /* Project */
+      .projects-wrapper {
+         width: 750px !important;
+      }
+      .each-project img {
+         width: 100px !important;
+      }
+   
+      .img-wrap img {
+         width: 170px !important;
+      }
+   
+      .active-project .desc {
+         font-size: 14px !important;
+      }
+   
+      .project-list {
+         margin-top: 40px !important;
+      }
+
+      .buttons button {
+         font-size: 15px !important;
+      }
+   
 }
   
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 770px) {
    /* Button  */
    .buttons {
 		width: 700px;
-		border: 3px solid red;
    }
+
+   .buttons .button {
+      margin: 15px 18px 25px 18px !important;
+      font-size: 25px !important;
+      padding: 15px !important;
+	}
 
    /* Intro */
    .image {
@@ -139,27 +178,45 @@
 		font-size: 17px !important;
 	}
 
-	/* Project */
-	.project-list {
-		width: 700px !important;
-	}
-	.project-list .project {
-		width: 200px;
-		height: 240px;
-		margin-top: 80px;
-	}
-	.tech-used span {
-		font-size: 25px !important;
-	}
+   /* Project */
+   .projects-wrapper {
+      width: 700px !important;
+   }
+   .each-project img {
+      width: 100px !important;
+   }
+
+   .img-wrap img {
+      width: 170px !important;
+   }
+
+   .active-project .desc {
+      font-size: 14px !important;
+   }
+
+   .project-list {
+      margin-top: 40px !important;
+   }
+
+   .buttons button {
+      font-size: 19px !important;
+      padding: 5px 10px !important;
+      border-radius: 5px !important;
+   }
+   .project-name {
+      font-size: 16px;
+   }
+
 }
   
 @media screen and (max-width: 740px) {
 	/* Button  */
 	.buttons {
-		width: 600px;
+      width: 620px;
 	}
 	.buttons .button {
-		margin: 15px 18px 25px 18px;
+      margin: 15px 14px 25px 14px !important;
+      font-size: 26px !important;
 	}
 
 	/* Intro */
@@ -182,33 +239,55 @@
 	/* Contact */
 
 	form {
-		width: 400px !important;
+		width: 450px !important;
 	}
-	form .label {
-		margin-top: 5px !important;
-	}
+   form input {
+		font-size: 20px !important;
+   }
+   form textarea {
+      font-size: 20px !important;
+   }
+
+   
+   .form-title {
+      margin-bottom: 30px;
+   }
 
 	/* Project */
-	.project-list {
-		width: 600px !important;
-	}
-	.project-list .project {
-		width: 180px;
-		height: 210px;
-		margin-top: 50px;
-	}
-	.tech-used span {
-		font-size: 22px !important;
-	}
+	.projects-wrapper {
+      width: 600px !important;
+   }
+   .each-project img {
+      width: 80px !important;
+   }
+
+   .img-wrap img {
+      width: 170px !important;
+   }
+
+   .active-project .desc {
+      font-size: 14px !important;
+   }
+
+   .project-list {
+      margin-top: 40px !important;
+   }
+   .project-name {
+      font-size: 13px;
+   }
+
+   .buttons button {
+      font-size: 15px !important;
+   }
 }
 @media screen and (max-width: 640px) {
 	/* Button */
 	.buttons {
-		width: 500px;
+      width: 530px;
 	}
 	.buttons .button {
-		margin: 15px 13px 25px 13px;
-		font-size: 18px !important;
+		margin: 15px 10px 25px 10px !important;
+		font-size: 22px !important;
 	}
 
 	/* Intro */
@@ -245,11 +324,15 @@
 	/* Contact */
 
 	form {
-		width: 350px !important;
+		width: 390px !important;
 	}
 	form input {
-		font-size: 18px !important;
-	}
+		font-size: 19px !important;
+   }
+   
+   .form-title {
+      margin-bottom: 30px;
+   }
 
 	/* Project */
 	.project-list {
@@ -270,8 +353,9 @@
       width: 400px;
 	}
 	.buttons .button {
-		margin: 5px 5px 20px 5px;
-		font-size: 15px !important;
+		margin: 5px 5px 20px 5px !important;
+      font-size: 19px !important;
+      padding: 10px !important;
 	}
 
 	/* Intro */
@@ -349,9 +433,9 @@
      width: 350px;
    }
    .buttons .button {
-      margin: 0px 3px 14px 3px;
-      font-size: 14px;
-      padding: 7px;
+      margin: 0px 3px 14px 3px !important;
+      font-size: 16px !important;
+      padding: 10px !important;
    }
 
    /* Intro */
@@ -391,7 +475,20 @@
 	}
 	form .label {
 		margin-top: 5px !important;
-	}
+   }
+   
+   form textarea {
+      height: 140px !important;
+   }
+
+   .form-title {
+      margin-bottom: 20px;
+   }
+
+   .form-button {
+      padding: 10px 15px !important;
+   }
+
 
 	/* Project */
 	.project-list {
@@ -407,53 +504,3 @@
 	}
 }
 
-@media screen and (max-width: 350px) {
-	/* Button */
-    .buttons .button {
-       margin: 0px 2px 7px 2px;
-       font-size: 13px;
-       padding: 5px;
-    }
-
-   /* Intro */
-	.header .my-name {
-	   font-size: 16px !important;
-	}
-	.header .my-job {
-	   font-size: 14px !important;
-	 }
-	 
-	 /* Skills */
-	 .skills-con .skill {
-		 width: 250px !important;
-	 }
- 
-	 /* Contact */
- 
-	 form {
-		 width: 265px !important;
-	 }
-	 form .label {
-		 font-size: 16px !important;
-	 }
-	 form input {
-		 margin: 10px 0px !important;
-		 font-size: 17px !important;
-	 }
-	 form textarea {
-		 height: 100px !important;
-		 font-size: 17px !important;
-	 }
-	 /* Project */
-	.project-list {
-		width: 220px !important;
-	}
-	.project-list .project {
-		width: 200px;
-		height: 230px;
-		margin: 10px auto;
-	}
-	.tech-used span {
-		font-size: 23px !important;
-	}
- }

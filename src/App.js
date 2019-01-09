@@ -39,7 +39,7 @@ class App extends Component {
 		setTimeout(()=>{
 			this.setState({showButton: true, showHeader: true});
 		}, 0);
-	}
+   }
 	onButtonClick = (height, index)=>{
       console.log(index);
 			if(index != 0){

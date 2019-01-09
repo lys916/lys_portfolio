@@ -38,5 +38,5 @@
 }
 .skill .show-rating{
     transition: width 1.5s;
-    transition-delay: .3s;
+    transition-delay: .1s;
 }

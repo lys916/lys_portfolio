@@ -25,16 +25,12 @@ class Contact extends React.Component {
 	}
 	render(){
 		return (
-			<form className={this.state.showForm ? 'show-form' : null}>
-				<div className={this.state.focus === 'name' ? 'focus label' : 'label'}>Name</div>
-				<input name="name" autocomplete="off" onFocus={()=>{this.onFocus('name')}} onBlur={this.onBlur}/>
-
-				<div className={this.state.focus === 'email' ? 'focus label' : 'label'}>Email</div>
-				<input name="email" autocomplete="off" onFocus={()=>{this.onFocus('email')}} onBlur={this.onBlur}/>
-
-				<div className={this.state.focus === 'message' ? 'focus label' : 'label'}>Message</div>
-				<textarea name="message" autocomplete="off" onFocus={()=>{this.onFocus('message')}} onBlur={this.onBlur}/>
-				<button>Send</button>
+			<form className={`contact' ${this.state.showForm ? 'show-form' : null}`}>
+            <div className="form-title">Have a question or want to work together? Shoot me a message!</div>
+				<input name="name" placeholder="Your name" autocomplete="off" onFocus={()=>{this.onFocus('name')}} onBlur={this.onBlur}/>
+				<input name="email" placeholder="Your email" autocomplete="off" onFocus={()=>{this.onFocus('email')}} onBlur={this.onBlur}/>
+				<textarea name="message" placeholder="Your message" autocomplete="off" onFocus={()=>{this.onFocus('message')}} onBlur={this.onBlur}/>
+				<button className="form-button">Send</button>
 			</form>
 		)
 	}
