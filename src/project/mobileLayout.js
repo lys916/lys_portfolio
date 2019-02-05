@@ -14,8 +14,8 @@ const MobileLayout = (props)=>{
                   <div>{projects[activeProject].desc}</div><br/>
                   <div>Tech used: {projects[activeProject].tech}</div><br/>
                   <div className="buttons">
-                     <button>Website</button>
-                     <button>Github</button>
+                     <a href={project.url} target="_blank"><button>Website</button></a>
+                     <a href={project.github} target="_blank"><button>Github</button></a>
                   </div>
                </div>
             )

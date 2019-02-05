@@ -1,5 +1,5 @@
 /* MEDIA QUERY */
-@media screen and (max-width: 1300px) {	
+@media screen and (max-width: 1500px) {	
 	/* Button */
 	.buttons {
 		width: 800px;
@@ -40,15 +40,15 @@
       width: 900px !important;
    }
    .each-project img {
-      width: 130px !important;
+      width: 120px !important;
    }
 
    .img-wrap img {
-      width: 220px !important;
+      width: 210px !important;
    }
 
    .active-project .desc {
-      font-size: 17px !important;
+      font-size: 16px !important;
    }
 
    .project-list {
@@ -56,10 +56,71 @@
    }
 }
 
+@media screen and (max-width: 1300px) {	
+	/* Button */
+	.buttons {
+		width: 800px;
+	}
+
+	/* Intro */
+	.image {
+		width: 130px !important;
+		height: 130px !important;
+	}
+	.my-name {
+		font-size: 45px !important;
+	}
+	.my-job {
+		font-size: 35px !important;
+	}
+	.show-header {
+      height: 350px !important;
+	}
+
+	/* Skills */
+	.skills-con .skill {
+		width: 600px !important;
+		margin: 5px auto !important;
+   }
+   .skill .name {
+      font-size: 15px !important;
+   }
+   .skill .rating {
+      height: 13px !important;
+   }
+   .skill .percent {
+		font-size: 12px !important;
+	}
+
+   /* Project */
+	.projects-wrapper {
+		width: 750px !important;
+	}
+	.each-project img {
+		width: 90px !important;
+	}
+
+	.img-wrap img {
+		width: 170px !important;
+	}
+
+	.active-project .desc {
+		font-size: 14px !important;
+	}
+
+	.project-list {
+		margin-top: 40px !important;
+	}
+
+	.buttons button {
+		font-size: 15px !important;
+	}
+}
+
 @media screen and (max-width: 1024px) {	
 	/* Button */
 	.buttons {
-      width: 650px;
+		width: 650px;
    }
    
    .buttons .button {
@@ -102,7 +163,7 @@
          width: 750px !important;
       }
       .each-project img {
-         width: 100px !important;
+         width: 80px !important;
       }
    
       .img-wrap img {

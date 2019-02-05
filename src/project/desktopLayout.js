@@ -12,8 +12,8 @@ const DesktopLayout = (props)=>{
                   <div>{projects[activeProject].desc}</div><br/>
                   <div>Tech used: {projects[activeProject].tech}</div><br/>
                   <div className="buttons">
-                     <button>Website</button>
-                     <button>Github</button>
+                     <a href={projects[activeProject].url} target="_blank"><button>Website</button></a>
+                     <a href={projects[activeProject].github} target="_blank"><button>Github</button></a>
                   </div>
                </div>
             </div>

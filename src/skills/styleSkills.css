@@ -6,7 +6,7 @@
     color: white;
     text-align: left;
     width: 700px;
-    margin: 10px auto;
+    margin: 5px auto;
 }
 .skill .bar {
     display: flex;
@@ -24,11 +24,12 @@
 
 .skill .rating{
     width: 0px;
-    height: 15px;
+    height: 13px;
     background: var(--skills);
     margin-right: 5px;
 }
 .skill .percent{
+    font-size: 15px;
     opacity: 0;
 }
 .skill .show-percent{
